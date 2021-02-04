@@ -1,6 +1,6 @@
 <h1>タスク生成</h1>
 
-<%= form_for(model: @task) do |f| %>
+<%= form_with(model: @task, local: true) do |f| %>
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
 
